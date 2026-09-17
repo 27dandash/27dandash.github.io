@@ -96,7 +96,7 @@ nav a.is-active > span:first-child { color: var(--brand); }
 h1 { max-width: 780px; font-size: clamp(3.75rem, 6.3vw, 6.55rem); letter-spacing: -.07em; }
 h1 em, .contact-section h2 em { color: var(--brand); font-style: normal; }
 .hero-lead { max-width: 670px; margin: 30px 0 0; color: var(--muted); font-size: clamp(1rem, 1.4vw, 1.17rem); line-height: 1.75; }
-.hero-lead a { color: var(--text); background-image: linear-gradient(var(--brand), var(--brand)); background-repeat: no-repeat; background-position: 0 100%; background-size: 100% 1px; }
+.hero-lead .company-name { color: var(--text); font-weight: 700; }
 .hero-actions, .contact-actions { display: flex; flex-wrap: wrap; gap: 11px; margin-top: 34px; }
 .button { min-height: 52px; padding: 0 20px; display: inline-flex; justify-content: center; align-items: center; gap: 13px; border: 1px solid var(--line); border-radius: 12px; font-size: .8rem; font-weight: 800; transition: transform .2s ease, border-color .2s ease, background .2s ease, box-shadow .2s ease; }
 .button > span { transition: transform .2s ease; }
