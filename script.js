@@ -3,8 +3,10 @@ const header = document.querySelector('[data-header]');
 const themeToggle = document.querySelector('.theme-toggle');
 const menuToggle = document.querySelector('.menu-toggle');
 const menuLabel = menuToggle.querySelector('.sr-only');
+const collapsedNavigation = window.matchMedia('(max-width: 700px)');
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 const themeColor = document.querySelector('meta[name="theme-color"]');
+let lastHeaderFocus = null;
 
 root.classList.add('js');
 
@@ -45,7 +47,7 @@ const closeMenu = (returnFocus = false) => {
   header.classList.remove('menu-open');
   menuToggle.setAttribute('aria-expanded', 'false');
   menuLabel.textContent = 'Open navigation';
-  if (returnFocus) menuToggle.focus();
+  if (returnFocus) window.requestAnimationFrame(() => menuToggle.focus());
 };
 
 menuToggle.addEventListener('click', () => {
@@ -55,7 +57,7 @@ menuToggle.addEventListener('click', () => {
 });
 
 header.querySelectorAll('nav a').forEach((link) => {
-  link.addEventListener('click', () => closeMenu(window.innerWidth <= 790));
+  link.addEventListener('click', () => closeMenu(collapsedNavigation.matches));
 });
 
 document.addEventListener('keydown', (event) => {
@@ -64,6 +66,14 @@ document.addEventListener('keydown', (event) => {
 
 document.addEventListener('click', (event) => {
   if (header.classList.contains('menu-open') && !header.contains(event.target)) closeMenu();
+});
+
+document.addEventListener('focusin', (event) => {
+  lastHeaderFocus = header.contains(event.target) ? event.target : null;
+});
+
+document.addEventListener('pointerdown', (event) => {
+  if (!header.contains(event.target)) lastHeaderFocus = null;
 });
 
 document.querySelector('#year').textContent = new Date().getFullYear();
@@ -141,8 +151,23 @@ window.addEventListener('scroll', () => {
   window.requestAnimationFrame(updateScrollUI);
 }, { passive: true });
 
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 790 && header.classList.contains('menu-open')) closeMenu();
-});
+const handleNavigationBreakpoint = (event) => {
+  const nav = header.querySelector('nav');
+
+  if (event.matches) {
+    if (nav.contains(document.activeElement) || nav.contains(lastHeaderFocus)) closeMenu(true);
+    return;
+  }
+
+  const focusWasOnMenuToggle = document.activeElement === menuToggle || lastHeaderFocus === menuToggle;
+  if (header.classList.contains('menu-open')) closeMenu();
+  if (focusWasOnMenuToggle) navLinks[0]?.focus();
+};
+
+if ('addEventListener' in collapsedNavigation) {
+  collapsedNavigation.addEventListener('change', handleNavigationBreakpoint);
+} else {
+  collapsedNavigation.addListener(handleNavigationBreakpoint);
+}
 
 updateScrollUI();
