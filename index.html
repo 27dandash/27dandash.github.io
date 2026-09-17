@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260917-2">
+  <link rel="stylesheet" href="styles.css?v=20260917-3">
 </head>
 <body>
   <div class="ambient ambient-a" aria-hidden="true"></div>
@@ -26,7 +26,6 @@
     <nav aria-label="Primary navigation">
       <a href="#work">Work</a>
       <a href="#case-studies">Case studies</a>
-      <a href="#open-source">Open source</a>
       <a href="#engineering">Engineering</a>
       <a class="nav-cta" href="#contact">Let's talk</a>
     </nav>
@@ -44,8 +43,8 @@
           <a class="button button-secondary" href="https://www.linkedin.com/in/27dandash/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
         <div class="hero-proof" aria-label="Portfolio highlights">
-          <div><strong>12</strong><span>shipped products</span></div>
-          <div><strong>21</strong><span>store listings</span></div>
+          <div><strong>16</strong><span>shipped products</span></div>
+          <div><strong>36</strong><span>live store listings</span></div>
           <div><strong>Android + iOS</strong><span>production delivery</span></div>
         </div>
       </div>
@@ -78,13 +77,13 @@
     <section id="work" class="section-shell section-block">
       <div class="section-heading">
         <div><p class="kicker">Selected production work</p><h2>Products people can actually use.</h2></div>
-        <p>Recent releases first, followed by an archive of earlier shipped applications. Every store link is live and verified.</p>
+        <p>Recent releases first, followed by an archive of earlier shipped applications. Store links were checked against the live Google Play and App Store listings.</p>
       </div>
 
       <div class="project-grid">
         <article class="project-card project-wide accent-copper">
           <div class="project-index">01</div>
-          <div class="project-content"><span class="project-type">Food marketplace · Multi-app ecosystem</span><h3>FamilySufrah</h3><p>Arabic-first marketplace and delivery platform spanning customer, provider, and delegate experiences.</p><div class="tags"><span>Product flavors</span><span>Maps</span><span>Wallet</span><span>RTL</span></div><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.client">Customer ↗</a><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.provider">Provider ↗</a><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.delivery">Delegate ↗</a><a href="https://apps.apple.com/us/app/familysufrah-delegate/id6787687904">App Store ↗</a></div></div>
+          <div class="project-content"><span class="project-type">Food marketplace · Multi-app ecosystem</span><h3>FamilySufrah</h3><p>Arabic-first marketplace and delivery platform spanning customer, provider, and delegate experiences.</p><div class="tags"><span>Product flavors</span><span>Maps</span><span>Wallet</span><span>RTL</span></div><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.client">Customer Play ↗</a><a href="https://apps.apple.com/eg/app/familysufrah/id6787687426">Customer Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.provider">Provider Play ↗</a><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.delivery">Delegate Play ↗</a><a href="https://apps.apple.com/us/app/familysufrah-delegate/id6787687904">Delegate Store ↗</a></div></div>
           <img class="project-shot" src="assets/apps/familysufrah-3.jpg" alt="FamilySufrah product screen">
         </article>
 
@@ -138,58 +137,19 @@
       </div>
     </section>
 
-    <section class="section-shell section-block archive-section">
+    <section id="archive" class="section-shell section-block archive-section">
       <div><p class="kicker">Earlier shipped products</p><h2>A broader product archive.</h2></div>
       <div class="archive-grid">
-        <a href="https://apps.apple.com/us/app/%D8%A7%D8%AB%D8%A7%D8%AB%D9%8A/id6677037034"><span>ATHATHE</span><small>Furniture marketplace</small></a>
-        <a href="https://apps.apple.com/us/app/2days-%D9%8A%D9%88%D9%85%D9%8A%D9%86/id6740265856"><span>2days</span><small>Peer-to-peer rentals</small></a>
-        <a href="https://apps.apple.com/us/app/mumaken-%D9%85%D9%85%D9%83%D9%86/id6504041543"><span>Mumaken</span><small>Mobility enablement</small></a>
-        <a href="https://play.google.com/store/apps/details?id=com.aait.mediacothinkUser"><span>MediaCoThink</span><small>Education platform</small></a>
-        <a href="https://apps.apple.com/eg/app/%D9%88%D8%B7%D9%86%D9%8A-watani/id6756347265"><span>Watani</span><small>Aquaculture platform</small></a>
-        <a href="https://apps.apple.com/eg/app/%D8%A7%D8%B1%D8%AA%D8%AD/id6741735966"><span>Airtah</span><small>Event-services marketplace</small></a>
-      </div>
-    </section>
-
-    <section id="open-source" class="section-shell section-block repo-section">
-      <div class="section-heading">
-        <div><p class="kicker">Open-source &amp; Flutter lab</p><h2>18 public projects, from foundations to focused experiments.</h2></div>
-        <p>Production-minded foundations and architecture samples come first, followed by earlier Flutter applications and focused implementation references.</p>
-      </div>
-
-      <div class="repo-grid">
-        <a class="repo-card repo-featured" href="https://github.com/27dandash/flutter_base" target="_blank" rel="noreferrer">
-          <span class="repo-label">Foundation · Featured</span><h3>Flutter Base</h3><p>Production-grade Flutter foundation with Clean Architecture, multi-flavor delivery, localization, reusable UI, secure networking, tests, and optional integrations.</p><div class="repo-tags"><span>Clean Architecture</span><span>Multi-flavor</span><span>Testing</span></div><b>View repository ↗</b>
-        </a>
-        <a class="repo-card repo-featured" href="https://github.com/27dandash/Movie-Clean-Architecture" target="_blank" rel="noreferrer">
-          <span class="repo-label">Architecture · Featured</span><h3>Movie Clean Architecture</h3><p>Flutter movie application demonstrating Clean Architecture, BLoC/Cubit, Dio, dependency injection, and maintainable feature separation.</p><div class="repo-tags"><span>BLoC</span><span>Dio</span><span>DI</span></div><b>View repository ↗</b>
-        </a>
-        <a class="repo-card repo-featured" href="https://github.com/27dandash/GoRide_customer" target="_blank" rel="noreferrer">
-          <span class="repo-label">Ride-hailing · Customer</span><h3>GoRide Customer</h3><p>Flutter customer experience for ride booking, maps, trip tracking, service requests, Firebase, and push notifications.</p><div class="repo-tags"><span>Maps</span><span>Firebase</span><span>Trips</span></div><b>View repository ↗</b>
-        </a>
-        <a class="repo-card repo-featured" href="https://github.com/27dandash/GoRide_driver" target="_blank" rel="noreferrer">
-          <span class="repo-label">Ride-hailing · Driver</span><h3>GoRide Driver</h3><p>Flutter driver experience for ride requests, live trip workflows, maps, Firebase, and operational notifications.</p><div class="repo-tags"><span>Maps</span><span>Firebase</span><span>Live workflows</span></div><b>View repository ↗</b>
-        </a>
-        <a class="repo-card repo-featured" href="https://github.com/27dandash/Agora-Setup-in-flutter" target="_blank" rel="noreferrer">
-          <span class="repo-label">Real-time communication</span><h3>Agora Setup in Flutter</h3><p>Flutter starter project for integrating Agora real-time video calling with BLoC-based state handling.</p><div class="repo-tags"><span>Agora SDK</span><span>Video</span><span>BLoC</span></div><b>View repository ↗</b>
-        </a>
-        <a class="repo-card repo-featured" href="https://github.com/27dandash/Setup-Notification-in-flutter" target="_blank" rel="noreferrer">
-          <span class="repo-label">Platform reference</span><h3>Local Notifications</h3><p>Reference project for local and scheduled notifications, timezone handling, and notification permissions.</p><div class="repo-tags"><span>Scheduling</span><span>Timezone</span><span>Permissions</span></div><b>View repository ↗</b>
-        </a>
-        <a class="repo-card repo-featured" href="https://github.com/27dandash/Booking-hotel-Algoriza" target="_blank" rel="noreferrer">
-          <span class="repo-label">Booking · Training project</span><h3>Booking Hotel Algoriza</h3><p>Flutter hotel-booking application built with BLoC, Dio, geolocation, and Google Maps.</p><div class="repo-tags"><span>BLoC</span><span>Dio</span><span>Maps</span></div><b>View repository ↗</b>
-        </a>
-
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/Todo_App" target="_blank" rel="noreferrer"><span class="repo-label">Flutter project</span><h3>Todo App</h3><p>Public task-management application source.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/Flutter-Initial-Map" target="_blank" rel="noreferrer"><span class="repo-label">Maps reference</span><h3>Flutter Initial Map</h3><p>Google Maps initialization reference for Flutter.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/Weather_App_Algoriza" target="_blank" rel="noreferrer"><span class="repo-label">Training project</span><h3>Weather App Algoriza</h3><p>Public Flutter weather application source.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/Chat" target="_blank" rel="noreferrer"><span class="repo-label">Flutter project</span><h3>Chat</h3><p>Public Flutter chat application source.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/Algoriza-Tasks" target="_blank" rel="noreferrer"><span class="repo-label">Training archive</span><h3>Algoriza Tasks</h3><p>Collection of public Flutter training tasks.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/Play-Audio-in-Flutter" target="_blank" rel="noreferrer"><span class="repo-label">Media reference</span><h3>Play Audio in Flutter</h3><p>Audio playback and playlist implementation reference.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/M_Movies" target="_blank" rel="noreferrer"><span class="repo-label">UI experiment</span><h3>M Movies</h3><p>Movie application design backed by local JSON data.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/youtube_app" target="_blank" rel="noreferrer"><span class="repo-label">Flutter project</span><h3>YouTube App</h3><p>Public video-platform application source.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/Calculator" target="_blank" rel="noreferrer"><span class="repo-label">Flutter project</span><h3>Calculator</h3><p>Public calculator application source.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/News_App" target="_blank" rel="noreferrer"><span class="repo-label">Flutter project</span><h3>News App</h3><p>Public news application source.</p><b>View repository ↗</b></a>
-        <a class="repo-card repo-compact" href="https://github.com/27dandash/Shop_App_Master" target="_blank" rel="noreferrer"><span class="repo-label">Flutter project</span><h3>Shop App</h3><p>Public shopping application source.</p><b>View repository ↗</b></a>
+        <article><span>ATHATHE</span><small>Furniture marketplace</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.aait.flutter.athathy">Google Play ↗</a><a href="https://apps.apple.com/us/app/%D8%A7%D8%AB%D8%A7%D8%AB%D9%8A/id6677037034">App Store ↗</a></div></article>
+        <article><span>2days</span><small>Peer-to-peer rental marketplace</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.aait.flutter.twoDays">Google Play ↗</a><a href="https://apps.apple.com/us/app/2days-%D9%8A%D9%88%D9%85%D9%8A%D9%86/id6740265856">App Store ↗</a></div></article>
+        <article><span>Mumaken</span><small>Mobility enablement platform</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.aait.momaken">Google Play ↗</a><a href="https://apps.apple.com/us/app/mumaken-%D9%85%D9%85%D9%83%D9%86/id6504041543">App Store ↗</a></div></article>
+        <article><span>MediaCoThink</span><small>Two-role education platform</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.aait.mediacothinkUser">Google Play ↗</a><a href="https://apps.apple.com/sa/app/medicothink/id6757630726">App Store ↗</a></div></article>
+        <article><span>Watani</span><small>Aquaculture products and services</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.cs.flutter.watani">Google Play ↗</a><a href="https://apps.apple.com/us/app/%D9%88%D8%B7%D9%86%D9%8A-watani/id6756347265">App Store ↗</a></div></article>
+        <article><span>Airtah</span><small>Event-services marketplace</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.aait.flutter.airtah">Google Play ↗</a><a href="https://apps.apple.com/eg/app/%D8%A7%D8%B1%D8%AA%D8%AD/id6741735966">App Store ↗</a></div></article>
+        <article><span>Kasir</span><small>Location-based offers and discounts</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.aait.kasir">Google Play ↗</a><a href="https://apps.apple.com/us/app/%D9%83%D8%A7%D8%B3%D8%B1-kasir/id6753347730">App Store ↗</a></div></article>
+        <article><span lang="ar" dir="rtl">ملتقى الحمود</span><small>Rest-area booking for users and guards</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.flutter.elhamoud">Google Play ↗</a><a href="https://apps.apple.com/eg/app/%D9%85%D9%84%D8%AA%D9%82%D9%89-%D8%A7%D9%84%D8%AD%D9%85%D9%88%D8%AF-%D8%AD%D8%A7%D8%B1%D8%B3/id6479216033">App Store ↗</a></div></article>
+        <article><span lang="ar" dir="rtl">أثمان وأرباع</span><small>Fresh-meat ordering and delivery</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.flutter.eighthsAndQuartersUser">Google Play ↗</a><a href="https://apps.apple.com/eg/app/%D8%A7%D8%AB%D9%85%D8%A7%D9%86-%D9%88%D8%A7%D8%B1%D8%A8%D8%A7%D8%B9-%D8%B9%D9%85%D9%8A%D9%84/id1669250048">App Store ↗</a></div></article>
+        <article><span>Demel</span><small>Restaurant ordering experience</small><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.demel.resturant">Google Play ↗</a><a href="https://apps.apple.com/sa/app/demel/id1642980020">App Store ↗</a></div></article>
       </div>
     </section>
 
