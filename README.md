@@ -1,6 +1,8 @@
 # Abdelrahman Dandash - Portfolio
 
-Static, responsive portfolio for GitHub Pages.
+Static, responsive portfolio for GitHub Pages, covering 12 shipped products,
+21 verified store listings, product case studies, and 18 public engineering
+and learning repositories.
 
 ## Local preview
 

@@ -137,6 +137,19 @@ h1 span { display: block; color: transparent; -webkit-text-stroke: 1px color-mix
 .archive-grid span { font-family: "Space Grotesk"; font-weight: 700; }
 .archive-grid small { color: var(--muted); margin-top: 4px; }
 
+.repo-section { border-top: 1px solid var(--line); }
+.repo-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.repo-card { min-height: 230px; padding: 24px; border: 1px solid var(--line); border-radius: 22px; background: var(--surface); display: flex; flex-direction: column; transition: transform .22s ease, border-color .22s ease, background .22s ease; }
+.repo-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--brand) 55%, var(--line)); background: var(--surface-solid); }
+.repo-featured { min-height: 300px; background: linear-gradient(150deg, color-mix(in srgb, var(--brand-2) 9%, var(--surface)), var(--surface)); }
+.repo-label { color: var(--brand); text-transform: uppercase; letter-spacing: .11em; font-size: .61rem; font-weight: 800; }
+.repo-card h3 { margin-top: 12px; font-size: 1.45rem; letter-spacing: -.025em; }
+.repo-card p { color: var(--muted); font-size: .82rem; margin: 13px 0 22px; }
+.repo-card b { margin-top: auto; font-size: .72rem; }
+.repo-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: auto 0 22px; }
+.repo-tags span { border: 1px solid var(--line); border-radius: 99px; padding: 5px 8px; color: var(--muted); font-size: .6rem; }
+.repo-compact { min-height: 205px; }
+
 .contact-section { margin-block: 50px 110px; padding: 86px; border: 1px solid var(--line); border-radius: 38px; background: radial-gradient(circle at 95% 0, color-mix(in srgb, var(--brand) 25%, transparent), transparent 40%), var(--surface); text-align: center; }
 .contact-section h2 { max-width: 850px; margin-inline: auto; }
 .contact-actions { justify-content: center; }
@@ -150,6 +163,7 @@ footer { width: min(1140px, calc(100% - 40px)); margin: 0 auto; padding: 26px 0 
   .section-heading, .engineering-section, .archive-section { grid-template-columns: 1fr; gap: 38px; }
   .engineering-copy { position: static; }
   .case-grid { grid-template-columns: 1fr 1fr; }
+  .repo-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
@@ -166,7 +180,7 @@ footer { width: min(1140px, calc(100% - 40px)); margin: 0 auto; padding: 26px 0 
   .signal-strip { justify-content: flex-start; overflow-x: auto; }
   .section-block { padding-block: 82px; }
   .section-heading { margin-bottom: 32px; }
-  .project-grid, .case-grid, .archive-grid { grid-template-columns: 1fr; }
+  .project-grid, .case-grid, .archive-grid, .repo-grid { grid-template-columns: 1fr; }
   .project-wide { grid-column: auto; min-height: 570px; display: flex; }
   .project-shot { position: absolute; width: 142px; right: 20px; top: 42px; transform: rotate(5deg); opacity: .9; }
   .project-content { position: relative; z-index: 2; }
