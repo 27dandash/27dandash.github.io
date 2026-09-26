@@ -80,10 +80,13 @@ document.querySelector('#year').textContent = new Date().getFullYear();
 
 const revealItems = document.querySelectorAll([
   '.section-heading',
+  '.timeline-item',
   '.project-card',
   '.case-card',
   '.engineering-copy',
   '.engineering-list article',
+  '.skill-grid article',
+  '.foundation-card',
   '.archive-intro',
   '.archive-grid article',
   '.contact-section'

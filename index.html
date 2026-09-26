@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260917-9">
+  <link rel="stylesheet" href="styles.css?v=20260926-1">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -40,9 +40,9 @@
       <span class="sr-only">Open navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span>
     </button>
     <nav id="primary-navigation" aria-label="Primary navigation">
-      <a href="#work"><span>01</span> Work</a>
-      <a href="#case-studies"><span>02</span> Case studies</a>
-      <a href="#engineering"><span>03</span> Engineering</a>
+      <a href="#experience"><span>01</span> Experience</a>
+      <a href="#work"><span>02</span> Work</a>
+      <a href="#skills"><span>03</span> Skills</a>
       <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
     </nav>
     <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme">
@@ -59,7 +59,7 @@
         <p class="hero-lead">Flutter Developer at <span class="company-name">AAIT</span>, building production Android and iOS applications with clean architecture, reliable integrations, and polished localized experiences.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
-          <a class="button button-secondary" href="https://www.linkedin.com/in/27dandash/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <a class="button button-secondary" href="assets/AbdelRahman_Ayman_Dandash_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
         </div>
         <dl class="hero-proof" aria-label="Portfolio highlights">
           <div><dt>Shipped products</dt><dd>16</dd></div>
@@ -82,14 +82,43 @@
 
     <section class="signal-wrap" aria-label="Core capabilities"><div class="signal-strip"><span>Flutter</span><i aria-hidden="true"></i><span>Dart</span><i aria-hidden="true"></i><span>BLoC / Cubit</span><i aria-hidden="true"></i><span>Firebase</span><i aria-hidden="true"></i><span>REST APIs</span><i aria-hidden="true"></i><span>Store delivery</span></div></section>
 
-    <section id="work" class="section-shell section-block" aria-labelledby="work-title">
+    <section id="experience" class="section-shell section-block experience-section" aria-labelledby="experience-title">
       <div class="section-heading">
-        <div class="section-label"><span>01</span><p class="kicker">Selected production work</p></div>
+        <div class="section-label"><span>01</span><p class="kicker">Professional journey</p></div>
+        <div class="section-title"><h2 id="experience-title">From first releases<br>to production ownership.</h2><p>A focused timeline of Flutter roles, cross-functional delivery, and hands-on ownership across Android and iOS.</p></div>
+      </div>
+      <div class="timeline" aria-label="Professional experience timeline">
+        <article class="timeline-item timeline-current">
+          <div class="timeline-date"><span>Mar 2025</span><strong>Present</strong></div>
+          <div class="timeline-content"><p>ICRAFTSA</p><h3>Flutter Developer <span>Full-time</span></h3><p>Production Flutter delivery across multi-brand applications, real-time features, Firebase services, payments, localization, and store releases.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date"><span>Mar 2023</span><strong>Mar 2025</strong></div>
+          <div class="timeline-content"><p>AAIT</p><h3>Flutter Developer <span>Full-time</span></h3><p>Scalable Flutter applications with Clean Architecture, BLoC/Cubit, REST integrations, reusable UI systems, and Android/iOS delivery.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date"><span>Jul 2022</span><strong>Sep 2022</strong></div>
+          <div class="timeline-content"><p>Algoriza</p><h3>Flutter Developer <span>Part-time</span></h3><p>Legacy modernization, production debugging, architecture improvements, caching, and API performance work.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date"><span>Sep 2021</span><strong>Mar 2022</strong></div>
+          <div class="timeline-content"><p>Techunique</p><h3>Flutter Developer</h3><p>Responsive Flutter interfaces, reusable components, and scalable state-management foundations.</p></div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-date"><span>Mar 2020</span><strong>Jul 2020</strong></div>
+          <div class="timeline-content"><p>Artronix</p><h3>Flutter Developer <span>Part-time</span></h3><p>Firebase, real-time data, notifications, maps, payments, and production support.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="work" class="section-shell section-block ruled-section" aria-labelledby="work-title">
+      <div class="section-heading">
+        <div class="section-label"><span>02</span><p class="kicker">Selected production work</p></div>
         <div class="section-title"><h2 id="work-title">Products people can<br>actually use.</h2><p>Recent releases first, followed by an archive of earlier shipped applications. Store links were checked against the live Google Play and App Store listings.</p></div>
       </div>
       <div class="project-grid">
         <article class="project-card project-featured accent-copper">
-          <div class="project-meta"><span>01</span><span class="project-type">Food marketplace · Multi-app ecosystem</span></div>
+          <div class="project-meta"><span class="project-badge">Featured ecosystem</span><span class="project-type">Food marketplace · Multi-app ecosystem</span></div>
           <div class="project-body"><div class="project-copy"><h3>FamilySufrah</h3><p>Arabic-first marketplace and delivery platform spanning customer, provider, and delegate experiences.</p></div><div class="project-visual project-visual-phone"><img src="assets/apps/familysufrah-3.jpg" alt="FamilySufrah mobile application interface"></div><div class="tags" aria-label="FamilySufrah capabilities"><span>Product flavors</span><span>Maps</span><span>Wallet</span><span>RTL</span></div><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.client">Customer Play ↗</a><a href="https://apps.apple.com/eg/app/familysufrah/id6787687426">Customer Store ↗</a><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.provider">Provider Play ↗</a><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.sofra.delivery">Delegate Play ↗</a><a href="https://apps.apple.com/us/app/familysufrah-delegate/id6787687904">Delegate Store ↗</a></div></div>
         </article>
         <article class="project-card project-standard accent-blue"><div class="project-meta"><span>02</span><span class="project-type">Logistics · Two-sided platform</span></div><div class="project-body"><div class="project-copy"><h3>Rahoul</h3><p>Customer and service-provider experiences for transportation and logistics workflows.</p></div><div class="project-visual"><img src="assets/apps/rahoul-icon.jpg" alt="Rahoul application icon"></div><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.flutter.cs.rahoul.user">Customer ↗</a><a href="https://play.google.com/store/apps/details?id=com.cs.flutter.rahoul.provider">Provider ↗</a><a href="https://apps.apple.com/sa/app/%D8%B1%D8%AD%D9%88%D9%84-%D8%A7%D9%84%D8%B9%D9%85%D9%8A%D9%84/id6766248186">App Store ↗</a></div></div></article>
@@ -101,7 +130,7 @@
     </section>
 
     <section id="case-studies" class="section-shell section-block ruled-section" aria-labelledby="case-title">
-      <div class="section-heading"><div class="section-label"><span>02</span><p class="kicker">Product case studies</p></div><div class="section-title"><h2 id="case-title">Context, craft,<br>and delivery.</h2><p>One-page overviews designed for quick recruiter and client review.</p></div></div>
+      <div class="section-heading"><div class="section-label"><span>03</span><p class="kicker">Product case studies</p></div><div class="section-title"><h2 id="case-title">Context, craft,<br>and delivery.</h2><p>One-page overviews designed for quick recruiter and client review.</p></div></div>
       <div class="case-grid">
         <a class="case-card" href="case-studies/familysufrah-case-study.pdf" target="_blank" rel="noreferrer"><span class="case-number">01 / PDF</span><img src="assets/apps/familysufrah-icon.jpg" alt="FamilySufrah icon"><div><span>Marketplace ecosystem</span><h3>FamilySufrah</h3><p>Customer, provider, and delegate workflows.</p></div><b>View case study <span aria-hidden="true">↗</span></b></a>
         <a class="case-card" href="case-studies/2days-case-study.pdf" target="_blank" rel="noreferrer"><span class="case-number">02 / PDF</span><img src="assets/apps/2days-icon.jpg" alt="2days icon"><div><span>Rental marketplace</span><h3>2days</h3><p>Maps, payments, agreements, and listings.</p></div><b>View case study <span aria-hidden="true">↗</span></b></a>
@@ -110,7 +139,7 @@
     </section>
 
     <section id="engineering" class="section-shell section-block engineering-section ruled-section" aria-labelledby="engineering-title">
-      <div class="engineering-copy"><div class="section-label"><span>03</span><p class="kicker">Engineering approach</p></div><h2 id="engineering-title">Built to stay maintainable after launch.</h2><p>I focus on architecture and product delivery together: clear feature boundaries, predictable state, resilient integrations, localized UX, and release-ready platform work.</p><a class="text-link" href="https://github.com/27dandash">Explore open-source work <span aria-hidden="true">↗</span></a></div>
+      <div class="engineering-copy"><div class="section-label"><span>04</span><p class="kicker">Engineering approach</p></div><h2 id="engineering-title">Built to stay maintainable after launch.</h2><p>I focus on architecture and product delivery together: clear feature boundaries, predictable state, resilient integrations, localized UX, and release-ready platform work.</p><a class="text-link" href="https://github.com/27dandash">Explore open-source work <span aria-hidden="true">↗</span></a></div>
       <div class="engineering-list">
         <article><span>01</span><div><h3>Architecture</h3><p>Clean Architecture, SOLID, modular feature boundaries, and dependency injection.</p></div></article>
         <article><span>02</span><div><h3>Application state</h3><p>BLoC and Cubit patterns built around predictable, testable state transitions.</p></div></article>
@@ -119,8 +148,25 @@
       </div>
     </section>
 
+    <section id="skills" class="section-shell section-block skills-section ruled-section" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <div class="section-label"><span>05</span><p class="kicker">Skills &amp; foundations</p></div>
+        <div class="section-title"><h2 id="skills-title">A practical stack for<br>shipping mobile products.</h2><p>Grouped by how the skills contribute to architecture, product integrations, and reliable delivery.</p></div>
+      </div>
+      <div class="skill-grid">
+        <article><span>01</span><h3>Mobile foundations</h3><div class="skill-chips"><span>Flutter</span><span>Dart</span><span>Kotlin</span><span>Java</span><span>Android</span><span>iOS</span></div></article>
+        <article><span>02</span><h3>Architecture &amp; state</h3><div class="skill-chips"><span>Clean Architecture</span><span>SOLID</span><span>BLoC</span><span>Cubit</span><span>Provider</span><span>Dependency Injection</span></div></article>
+        <article><span>03</span><h3>APIs &amp; product systems</h3><div class="skill-chips"><span>REST APIs</span><span>Firebase</span><span>Google Maps</span><span>Payments</span><span>Socket.IO</span><span>Deep Links</span></div></article>
+        <article><span>04</span><h3>Quality &amp; delivery</h3><div class="skill-chips"><span>Unit Testing</span><span>Widget Testing</span><span>CI/CD</span><span>Play Store</span><span>App Store</span><span>Huawei AppGallery</span></div></article>
+      </div>
+      <div class="foundation-grid">
+        <article class="foundation-card"><p class="kicker">Languages</p><h3>Arabic <span>&amp;</span> English</h3><p>Arabic and English product experiences with RTL and LTR localization support.</p></article>
+        <article class="foundation-card"><p class="kicker">Education</p><h3>Bachelor of Computer Science</h3><p>Higher Technological Institute, HTI · 2019–2022</p></article>
+      </div>
+    </section>
+
     <section id="archive" class="section-shell section-block archive-section ruled-section" aria-labelledby="archive-title">
-      <div class="archive-intro"><div class="section-label"><span>04</span><p class="kicker">Earlier shipped products</p></div><h2 id="archive-title">A broader<br> product archive.</h2></div>
+      <div class="archive-intro"><div class="section-label"><span>06</span><p class="kicker">Earlier shipped products</p></div><h2 id="archive-title">A broader<br> product archive.</h2></div>
       <div class="archive-grid">
         <article><span class="archive-index">01</span><img class="archive-icon" src="assets/apps/athathe-icon.jpg" alt="ATHATHE application icon"><div><h3>ATHATHE</h3><p>Furniture marketplace</p></div><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.aait.flutter.athathy">Google Play ↗</a><a href="https://apps.apple.com/us/app/%D8%A7%D8%AB%D8%A7%D8%AB%D9%8A/id6677037034">App Store ↗</a></div></article>
         <article><span class="archive-index">02</span><img class="archive-icon" src="assets/apps/2days-icon.jpg" alt="2days application icon"><div><h3>2days</h3><p>Peer-to-peer rental marketplace</p></div><div class="store-links"><a href="https://play.google.com/store/apps/details?id=com.aait.flutter.twoDays">Google Play ↗</a><a href="https://apps.apple.com/us/app/2days-%D9%8A%D9%88%D9%85%D9%8A%D9%86/id6740265856">App Store ↗</a></div></article>
@@ -136,9 +182,9 @@
     </section>
 
     <section id="contact" class="section-shell contact-section" aria-labelledby="contact-title">
-      <div class="contact-topline"><p class="kicker">Available for the right opportunity</p><span>05 / Contact</span></div>
+      <div class="contact-topline"><p class="kicker">Available for the right opportunity</p><span>07 / Contact</span></div>
       <h2 id="contact-title">Let's build a mobile product that holds up <em>in production.</em></h2>
-      <div class="contact-row"><div class="contact-actions"><a class="button button-primary" href="mailto:27dandash@gmail.com">27dandash@gmail.com <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://wa.me/201221769543">WhatsApp <span aria-hidden="true">↗</span></a></div><div class="social-links"><a href="https://github.com/27dandash">GitHub ↗</a><a href="https://www.linkedin.com/in/27dandash/">LinkedIn ↗</a><a href="https://www.instagram.com/27dandash">Instagram ↗</a><a href="https://www.facebook.com/share/1KVtFV3MGq/">Facebook ↗</a></div></div>
+      <div class="contact-row"><div class="contact-actions"><a class="button button-primary" href="mailto:27dandash@gmail.com">Email <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://wa.me/201221769543">WhatsApp <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="tel:+201221769543">Call <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="assets/AbdelRahman_Ayman_Dandash_CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a></div><div class="social-links"><a href="https://github.com/27dandash">GitHub ↗</a><a href="https://www.linkedin.com/in/27dandash/">LinkedIn ↗</a><a href="https://www.instagram.com/27dandash">Instagram ↗</a><a href="https://www.facebook.com/share/1KVtFV3MGq/">Facebook ↗</a></div></div>
     </section>
   </main>
 
