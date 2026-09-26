@@ -170,7 +170,8 @@ h1 em, .contact-section h2 em { color: var(--brand); font-style: normal; }
 .project-featured .project-body { grid-template-columns: minmax(0, 1fr) 230px; }
 .project-large .project-body { grid-template-columns: minmax(0, 1fr) 132px; }
 .project-copy { min-width: 0; }
-.project-copy h3 { font-size: clamp(2rem, 3.5vw, 3.5rem); letter-spacing: -.05em; }
+.project-copy h3 { display: flex; align-items: baseline; flex-wrap: wrap; gap: .18em .35em; font-size: clamp(2rem, 3.5vw, 3.5rem); letter-spacing: -.05em; }
+.project-name-ar { direction: rtl; unicode-bidi: isolate; color: var(--accent); font-size: .46em; font-weight: 700; letter-spacing: 0; }
 .project-copy > p { max-width: 620px; margin: 15px 0 0; color: var(--muted); }
 .project-visual { width: 116px; aspect-ratio: 1; justify-self: end; align-self: end; padding: 5px; border: 1px solid color-mix(in srgb, var(--accent) 32%, var(--line)); border-radius: 27px; background: color-mix(in srgb, var(--accent) 8%, var(--surface-soft)); box-shadow: 0 22px 48px rgba(0,0,0,.22); transform: rotate(2deg); transition: transform .4s cubic-bezier(.2,.7,.2,1), box-shadow .3s ease; }
 .project-visual img { width: 100%; height: 100%; display: block; border-radius: 21px; object-fit: cover; }
